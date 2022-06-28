@@ -1,0 +1,72 @@
+INFO |2022-06-10 12:38:07,887|c.j.d.DemocouchbaseApplication|Starting DemocouchbaseApplication on JMTELLO10 with PID 12640 (C:\Users\jmtello\Documents\bitbucket\couch_base_example\target\classes started by jmtello in C:\Users\jmtello\Documents\bitbucket\couch_base_example)
+DEBUG|2022-06-10 12:38:07,891|c.j.d.DemocouchbaseApplication|Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+INFO |2022-06-10 12:38:07,892|c.j.d.DemocouchbaseApplication|No active profile set, falling back to default profiles: default
+INFO |2022-06-10 12:38:08,475|o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data repositories in DEFAULT mode.
+DEBUG|2022-06-10 12:38:08,488|o.s.d.r.c.RepositoryConfigurationDelegate|Scanning for repositories in packages com.jtr.democouchbase.dao.
+DEBUG|2022-06-10 12:38:08,496|o.s.d.r.c.RepositoryComponentProvider|Identified candidate component class: file [C:\Users\jmtello\Documents\bitbucket\couch_base_example\target\classes\com\jtr\democouchbase\dao\AirlineRepository.class]
+DEBUG|2022-06-10 12:38:08,497|o.s.d.r.c.RepositoryComponentProvider|Identified candidate component class: file [C:\Users\jmtello\Documents\bitbucket\couch_base_example\target\classes\com\jtr\democouchbase\dao\AirportRepository.class]
+INFO |2022-06-10 12:38:08,534|o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 46ms. Found 2 repository interfaces.
+DEBUG|2022-06-10 12:38:11,232|o.s.d.r.c.s.RepositoryFactorySupport|Initializing repository instance for com.jtr.democouchbase.dao.AirlineRepository…
+DEBUG|2022-06-10 12:38:11,274|o.s.d.r.c.s.RepositoryFactorySupport|Finished creation of repository instance for com.jtr.democouchbase.dao.AirlineRepository.
+DEBUG|2022-06-10 12:38:11,291|o.s.d.r.c.s.RepositoryFactorySupport|Initializing repository instance for com.jtr.democouchbase.dao.AirportRepository…
+DEBUG|2022-06-10 12:38:11,324|o.s.d.r.c.s.RepositoryFactorySupport|Finished creation of repository instance for com.jtr.democouchbase.dao.AirportRepository.
+ERROR|2022-06-10 12:38:12,027|o.a.c.u.LifecycleBase|Failed to start component [Connector[HTTP/1.1-9000]]org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1001)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.jtr.democouchbase.DemocouchbaseApplication.main(DemocouchbaseApplication.java:10)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1067)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1149)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:561)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:998)
+	... 14 common frames omitted
+
+ERROR|2022-06-10 12:38:12,042|o.s.b.d.LoggingFailureAnalysisReporter|
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9000 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9000, or configure this application to listen on another port.
+
+INFO |2022-06-10 12:38:31,102|c.j.d.DemocouchbaseApplication|Starting DemocouchbaseApplication on JMTELLO10 with PID 17440 (C:\Users\jmtello\Documents\bitbucket\couch_base_example\target\classes started by jmtello in C:\Users\jmtello\Documents\bitbucket\couch_base_example)
+DEBUG|2022-06-10 12:38:31,106|c.j.d.DemocouchbaseApplication|Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+INFO |2022-06-10 12:38:31,107|c.j.d.DemocouchbaseApplication|No active profile set, falling back to default profiles: default
+INFO |2022-06-10 12:38:31,751|o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data repositories in DEFAULT mode.
+DEBUG|2022-06-10 12:38:31,755|o.s.d.r.c.RepositoryConfigurationDelegate|Scanning for repositories in packages com.jtr.democouchbase.dao.
+DEBUG|2022-06-10 12:38:31,760|o.s.d.r.c.RepositoryComponentProvider|Identified candidate component class: file [C:\Users\jmtello\Documents\bitbucket\couch_base_example\target\classes\com\jtr\democouchbase\dao\AirlineRepository.class]
+DEBUG|2022-06-10 12:38:31,761|o.s.d.r.c.RepositoryComponentProvider|Identified candidate component class: file [C:\Users\jmtello\Documents\bitbucket\couch_base_example\target\classes\com\jtr\democouchbase\dao\AirportRepository.class]
+INFO |2022-06-10 12:38:31,807|o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 51ms. Found 2 repository interfaces.
+DEBUG|2022-06-10 12:38:34,995|o.s.d.r.c.s.RepositoryFactorySupport|Initializing repository instance for com.jtr.democouchbase.dao.AirlineRepository…
+DEBUG|2022-06-10 12:38:35,044|o.s.d.r.c.s.RepositoryFactorySupport|Finished creation of repository instance for com.jtr.democouchbase.dao.AirlineRepository.
+DEBUG|2022-06-10 12:38:35,060|o.s.d.r.c.s.RepositoryFactorySupport|Initializing repository instance for com.jtr.democouchbase.dao.AirportRepository…
+DEBUG|2022-06-10 12:38:35,092|o.s.d.r.c.s.RepositoryFactorySupport|Finished creation of repository instance for com.jtr.democouchbase.dao.AirportRepository.
+INFO |2022-06-10 12:38:35,901|c.j.d.DemocouchbaseApplication|Started DemocouchbaseApplication in 5.115 seconds (JVM running for 6.142)
+DEBUG|2022-06-10 12:38:50,917|o.s.d.c.c.m.e.AbstractCouchbaseEventListener|onBeforeConvert(Airport{documentId='null', airportName='Barajas', city='Madrid', country='Spain', icao='icao', id=1654856209, tz='tz'})
+DEBUG|2022-06-10 12:38:51,079|o.s.d.c.c.m.e.ValidatingCouchbaseEventListener|Validating object: Airport{documentId='null', airportName='Barajas', city='Madrid', country='Spain', icao='icao', id=1654856209, tz='tz'}
+DEBUG|2022-06-10 12:38:53,087|o.s.d.c.c.m.e.AbstractCouchbaseEventListener|onAfterSave(Airport{documentId='airport_1654856209', airportName='Barajas', city='Madrid', country='Spain', icao='icao', id=1654856209, tz='tz'}, CouchbaseDocument{id=airport_1654856209, exp=0, payload={airportname=Barajas, country=Spain, city=Madrid, tz=tz, icao=icao, _class=com.jtr.democouchbase.entity.Airport}})
