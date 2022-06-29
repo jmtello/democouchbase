@@ -1,4 +1,4 @@
-package com.autentia.democouchbase;
+package com.jtr.democouchbase;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
